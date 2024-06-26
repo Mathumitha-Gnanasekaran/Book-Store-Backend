@@ -1,5 +1,10 @@
 import express from "express";
-import { fetch, create, update, deleteBook } from "../controller/bookController.js";
+import {
+  fetch,
+  create,
+  update,
+  deleteBook,
+} from "../controller/bookController.js";
 
 const route = express.Router();
 
@@ -9,4 +14,3 @@ route.put("/update/:id", update);
 route.delete("/delete/:id", deleteBook);
 
 export default route;
-
